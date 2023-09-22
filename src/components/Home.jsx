@@ -48,8 +48,8 @@ function Home(props) {
             ) : (
               <>
                 {movie.map((value, i) => (
-                  <div key={i}>
-                    <img src={value.Poster} alt="" />
+                  <div  key={i}>
+                    <img className='hover:scale-90 ease-in duration-300' src={value.Poster} alt="" />
                     <h3 className="pt-2 text-base text-center font-extrabold text-cyan-500">
                       {' '}
                       <span className="text-rose-500">Title : </span>
