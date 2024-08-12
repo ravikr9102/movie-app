@@ -6,7 +6,7 @@ function Home(props) {
 
   const saveFavourite = async (movie) => {
     setFav(movie + '-add');
-    await fetch('http://localhost:8000/api/movies/favourite', {
+    await fetch('https://movie-app-api-bevg.onrender.com/api/movies/favourite', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -22,7 +22,7 @@ function Home(props) {
   };
   const removeFavourite = async (id) => {
     setFav(id + 'remove');
-    await fetch(`http://localhost:8000/api/movies/favourite/${id}`, {
+    await fetch(`https://movie-app-api-bevg.onrender.com/api/movies/favourite/${id}`, {
       method: 'DELETE',
       headers: {
         'Content-Type': 'application/json',

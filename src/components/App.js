@@ -14,7 +14,7 @@ function App() {
 
   useEffect(() => {
     setTimeout(() => {
-      fetch(`http://localhost:8000/api/movies/search?query=${text}`)
+      fetch(`https://movie-app-api-bevg.onrender.com/api/movies/search?query=${text}`)
         .then((res) => res.json())
         .then((data) => {
           console.log(data);
@@ -27,7 +27,7 @@ function App() {
 
   useEffect(() => {
     const fetchData = async () => {
-      await fetch(`http://localhost:8000/movies`)
+      await fetch(`https://movie-app-api-bevg.onrender.com/movies`)
         .then((res) => res.json())
         .then((data) => {
           if (data.Search) {
