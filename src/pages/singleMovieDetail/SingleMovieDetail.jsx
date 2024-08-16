@@ -10,7 +10,7 @@ export const SingleMovieDetail = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
 
-  // Function to fetch single movie details
+  // Function to fetch single movie detail
   const fetchSingleMovie = async () => {
     setLoading(true);
     try {
